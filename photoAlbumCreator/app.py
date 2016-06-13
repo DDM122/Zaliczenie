@@ -13,7 +13,7 @@ def upload_s3(source_file, filename):
   return destination_filename
 
 sqs = boto3.resource('sqs')
-albumRequests = sqs.get_queue_by_name(QueueName='dosinski-album')
+albumRequests = sqs.get_queue_by_name(QueueName='osinski-album')
 bucket_address = 'https://s3.eu-central-1.amazonaws.com/167789osinski'
 
 while True:
